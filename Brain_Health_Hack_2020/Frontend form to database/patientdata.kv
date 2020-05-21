@@ -1,0 +1,87 @@
+<MyGrid>:
+
+    phq91:phq91
+    phq92:phq92
+    phq93:phq93
+    phq94:phq94
+    phq95:phq95
+    phq96:phq96
+    phq97:phq97
+    phq98:phq98
+    phq99:phq99
+
+
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+
+        GridLayout:
+            cols:2
+
+            Label:
+                text: "Question 1: "
+
+            TextInput:
+                id: phq91
+                multinline:False
+
+            Label:
+                text: "Question 2: "
+
+            TextInput:
+                multiline:False
+                id: phq92
+
+            Label:
+                text: "Question 3: "
+
+            TextInput:
+                multinline:False
+                id: phq93
+
+            Label:
+                text: "Question 4: "
+
+            TextInput:
+                multiline:False
+                id: phq94
+            
+            Label:
+                text: "Question 5: "
+
+            TextInput:
+                multinline:False
+                id: phq95
+
+            Label:
+                text: "Question 6: "
+
+            TextInput:
+                multiline:False
+                id: phq96
+            Label:
+                text: "Question 7: "
+
+            TextInput:
+                multinline:False
+                id: phq97
+
+            Label:
+                text: "Question 8: "
+
+            TextInput:
+                multiline:False
+                id: phq98
+
+            Label:
+                text: "Question 9: "
+
+            TextInput:
+                multinline:False
+                id: phq99
+
+
+
+        Button:
+            text:"Submit"
+            on_press: root.insert()

@@ -1,0 +1,34 @@
+#:kivy 1.8.0
+
+RootWidget:
+    # import container
+    container: container
+
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 0
+        spacing: 3
+
+        # bottom-left part:
+        BoxLayout:
+            orientation: 'horizontal'
+            padding: 0
+            spacing: 3
+            Label:
+                text: 'Welcome to Buckeye Conussions!'
+
+            # bottom-left
+            BoxLayout:
+                size_hint: 0.12, 0.12
+                orientation: 'vertical'
+                padding: 0
+                spacing: 3
+
+                # option calibrate
+                Button:
+                    text: 'Enter Get Started'
+                    on_release: app.next_screen('1')
+
+            # create container (bottom-right)
+            BoxLayout:
+                id: container

@@ -1,0 +1,27 @@
+#:kivy 1.8.0
+BoxLayout:
+    orientation: 'vertical'
+    padding: 0
+    spacing: 6
+    
+    ScrollView:
+        do_scroll_x: False
+        do_scroll_y: True
+    
+        Label:
+            source: 'osucopyru.png'
+    
+        Label:
+    		    text: 'Welcome to Buckeye Conussions!'
+    		    color: 242,40,71,1
+    		    
+    		    
+    	  Button:
+            text: 'next'
+            on_release: app.next_screen('Form 1 Questioneer')
+            
+       Label:
+          text: 'Question 1'
+    	
+    	
+        
